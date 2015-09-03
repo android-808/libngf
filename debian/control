@@ -1,0 +1,30 @@
+Source: libngf
+Maintainer: Robert Irvin <android_808@hotmail.com>
+Section: misc
+Priority: optional
+Standards-Version: 3.9.2
+Build-Depends: debhelper (>= 9), libglib2.0-dev (>=2.18.0), libdbus-1-dev (>=1.0.2), libdbus-glib-1-dev, check, doxygen
+
+Package: libngf0
+Architecture: any
+Section: libs
+Depends: ${shlibs:Depends}, ngfd
+Description: Non-graphic feedback C-based client library
+
+Package: libngf-dev
+Architecture: any
+Section: libdevel
+Depends: libngf0 (= ${Source-Version}), ${shlibs:Depends}
+Description: Non-graphic feedback C-based development package
+
+Package: libngf-doc
+Architecture: any
+Section: docs
+Depends: libngf0 (= ${Source-Version})
+Description: Non-graphic feedback client documentation
+
+Package: libngf-client
+Architecture: any
+Depends: libngf0 (= ${Source-Version}), ${shlibs:Depends}, ${misc:Depends}
+Description: Non-graphic feedback test client
+

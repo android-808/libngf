@@ -1,0 +1,5 @@
+libngf (0.24.0+git40126053ab) UNRELEASED; urgency=medium
+
+  * Initial release. (Closes: #XXXXXX)
+
+ -- Robert Irvin <robert@debian-host.home>  Wed, 21 Jan 2015 14:21:19 +0000
